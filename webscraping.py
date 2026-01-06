@@ -396,9 +396,3 @@ class GabrielInvestimentos:
             else:
                 self.data.to_csv(f"dados.{format}", index=False)
 
-
-
-# url = 'https://apprendafixa.com.br/app/investimentos/rendafixa?tipo=ALL&fgc=true&vencimentoInicio=1&vencimentoFim=180&irInicio=0&irFim=0.225&riscoInicio=0&riscoFim=1'
-
-# gbr_invest = GabrielInvestimentos(url)
-# result = gbr_invest.calcular_rendimentos(200)

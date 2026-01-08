@@ -1,6 +1,6 @@
 import subprocess, sys, os, calendar, datetime, requests, importlib
 
-modulos = [["numpy", None], ["pandas", None], ["dias_uteis", None], ["selenium", None], ["selenium.webdriver", "webdriver-manager"]]
+modulos = [["numpy", None], ["pandas", None], ["dias_uteis", None], ["matplotlib", None], ["selenium", None], ["selenium.webdriver", "webdriver-manager"]]
 def search_modules(pacote, pip_name=None, obj=None): 
     
     pip_name = pip_name if pip_name is not None else pacote
@@ -17,6 +17,7 @@ for pct_name, pip_name in modulos:
 import pandas as pd
 import numpy as np
 import dias_uteis as du
+import matplotlib.pyplot as plt
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
@@ -26,3 +27,4 @@ from gbr_invest.web_utils.getData import GetData
 from gbr_invest.mat_utils.data_handler import DataHandler
 from gbr_invest.mat_utils.rendimentos import Rendimentos
 from gbr_invest.API.bcb_series import BCB_Series
+from gbr_invest.mat_utils.graphics.graficos import Graficos

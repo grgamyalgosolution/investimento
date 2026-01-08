@@ -1,5 +1,5 @@
 
-from settings import os, DataHandler, GetData, BCB_Series, Rendimentos
+from settings import os, DataHandler, GetData, BCB_Series, Rendimentos, Graficos
 
 
 
@@ -14,11 +14,7 @@ class GabrielInvestimentos:
         self.data = self.get_data.data
         self.bcb_api = BCB_Series(self)
         self.rendimentos = Rendimentos(self)
+        self.graficos = Graficos()
 
 
 
-
-# url = 'https://apprendafixa.com.br/app/investimentos/rendafixa?tipo=ALL&fgc=true&vencimentoInicio=1&vencimentoFim=180&irInicio=0&irFim=0.225&riscoInicio=0&riscoFim=1'
-
-# gbr_invest = GabrielInvestimentos(url)
-# gbr_invest.rendimentos.calcular_rendimentos(200)
